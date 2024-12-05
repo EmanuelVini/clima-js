@@ -21,7 +21,11 @@ function search() {
 function placeData(dataServer) {
   document.querySelector('.location').innerHTML = 'Tempo em ' + dataServer.name;
   document.querySelector('.temp-location').innerHTML =
-    dataServer.main.temp + '°';
+    Math.floor(dataServer.main.temp) + '°C';
   document.querySelector('.type-temp').innerHTML =
     dataServer.weather[0].description;
+  document.querySelector('.humidity').innerHTML =
+    dataServer.main.humidity + '% Umidade';
+  document.querySelector('.clim-img').src =
+    'https://openweathermap.org/img/wn/' + dataServer.weather[0].icon + '.png';
 }
