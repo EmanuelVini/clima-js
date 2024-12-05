@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krona+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scrip.js"></script>
+    <title>Weather See</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <input
+        class="input-location"
+        type="text"
+        placeholder="Digite o nome da localização"
+      />
+      <button class="search-btn" onclick="search()">
+        <img
+          class="img-search"
+          src="https://www.svgrepo.com/show/488200/find.svg"
+          alt="Img Busca"
+        />
+      </button>
+      <div class="second-container">
+        <h2 class="location">Tempo em São Paulo</h2>
+        <p class="temp-location">25°</p>
+        <div class="t-container">
+          <img
+            class="clim-img"
+            src="img_clima/rain.png"
+            alt="Imagem do tipo do clima"
+          />
+          <p class="type-temp">Nublado</p>
+        </div>
+        <p class="qtd-weat">Umidade: 16%</p>
+      </div>
+    </div>
+  </body>
+</html>
